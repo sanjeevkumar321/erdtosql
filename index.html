@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1PQWLSPMHE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-1PQWLSPMHE');
+    </script>
+    <title>ERDtoSQL | Visual Database Designer & SQL Generator</title>
+    <meta name="description" content="Free visual database designer. Create ERD diagrams, generate SQL for PostgreSQL, MySQL, SQLite, and Prisma schema. Export as PNG/SVG. No login required." />
+    <meta name="keywords" content="database designer, erd builder, sql generator, postgresql, mysql, prisma schema, visual schema builder, database modeling tool" />
+    <meta name="author" content="ERDtoSQL" />
+    <link rel="canonical" href="https://erdtosql.com/" />
+
+    <meta property="og:title" content="ERDtoSQL | Visual Database Designer & SQL Generator" />
+    <meta property="og:description" content="Design database schemas visually with drag-and-drop. Generate SQL, PostgreSQL, MySQL, SQLite and Prisma schema instantly." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://erdtosql.com/" />
+    <meta property="og:image" content="/placeholder.svg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ERDtoSQL | Visual ERD Editor" />
+    <meta name="twitter:description" content="Free drag-and-drop ERD builder with instant SQL & Prisma generation." />
+    <meta name="twitter:image" content="/placeholder.svg" />
+
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "ERDtoSQL",
+        "description": "Visual database designer that generates SQL and Prisma schema from ERD diagrams.",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Web",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "ERDtoSQL",
+        "operatingSystem": "Any",
+        "applicationCategory": "DeveloperApplication",
+        "description": "Visual Entity Relationship Diagram (ERD) tool for database architects and developers.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      }
+    ]
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
