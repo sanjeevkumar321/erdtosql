@@ -5,6 +5,8 @@ import CodePanel from '@/components/erd/CodePanel';
 import JsonSyncPanel from '@/components/erd/JsonSyncPanel';
 import ThemeToggle from '@/components/ThemeToggle';
 import { Code, Eye, GripVertical, Database } from 'lucide-react';
+import { SEO_CONTENT } from '@/data/seoContent';
+import SEO from '@/components/SEO';
 
 function ERDApp() {
   const [rightPanel, setRightPanel] = useState<'code' | 'json'>('code');
@@ -34,7 +36,7 @@ function ERDApp() {
           </div>
           <div>
             <h1 className="text-sm font-display font-bold tracking-tight text-foreground leading-none">ERDtoSQL</h1>
-            <span className="text-[10px] text-muted-foreground font-mono">Visual Database Designer</span>
+            <span className="text-[10px] text-muted-foreground font-mono">Visual ERD Designer & SQL Generator</span>
           </div>
         </div>
         <div className="flex items-center gap-2">
@@ -93,6 +95,7 @@ function ERDApp() {
 export default function Index() {
   return (
     <ERDProvider>
+      <SEO data={SEO_CONTENT['default']} />
       <ERDApp />
     </ERDProvider>
   );
